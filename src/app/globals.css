@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0f1117;
+  --foreground: #e8eaf0;
+  --hyundai-navy: #002C5F;
+  --hyundai-blue: #00AAD2;
+  --card-bg: #1a1f2e;
+  --border: #1e2235;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.scrollbar-thin::-webkit-scrollbar { width: 4px; height: 4px; }
+.scrollbar-thin::-webkit-scrollbar-track { background: #0f1117; }
+.scrollbar-thin::-webkit-scrollbar-thumb { background: #2a3050; border-radius: 2px; }
