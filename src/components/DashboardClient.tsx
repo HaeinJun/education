@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import KpiCard from "@/components/KpiCard";
 import RevenueChart from "@/components/RevenueChart";
 import SalesChart from "@/components/SalesChart";
@@ -58,6 +59,10 @@ export default function DashboardClient({ data }: Props) {
             <span className="text-xs px-3 py-1.5 rounded-full font-semibold" style={{ background: "#00AAD2", color: "#fff" }}>
               2026년 1분기 실적
             </span>
+            <Link href="/insights" className="text-xs px-3 py-1.5 rounded-full border transition-colors hover:bg-white/10 font-semibold"
+              style={{ color: "#00AAD2", borderColor: "#00AAD2" }}>
+              ✦ AI 인사이트
+            </Link>
             <span className="text-xs" style={{ color: "#8ab4d4" }}>업데이트: {latest?.updated_at ? new Date(latest.updated_at).toLocaleDateString("ko-KR") : "-"}</span>
           </div>
         </div>
